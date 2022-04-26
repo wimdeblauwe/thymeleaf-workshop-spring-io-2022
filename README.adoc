@@ -18,3 +18,10 @@ In order to follow the workshop, it's a good idea to have the following prerequi
 Use https://sdkman.io/ to easily install Java SDK and Maven.
 ====
 
+== Getting started
+
+. Run `mvn verify` to download all dependencies to your local repository.
+. Copy `src/main/resources/application-local.properties.example` to `src/main/resources/application-local.properties`
+. Start the application from your IDE using the `local` profile.
+. Run `npm run build && npm run watch` in a separate terminal window to have Live Reload.
+. Access the application at http://localhost:3000
