@@ -1,3 +1,1 @@
 spring.thymeleaf.cache=false
-spring.web.resources.chain.strategy.content.enabled=true
-spring.web.resources.chain.strategy.content.paths=/**
