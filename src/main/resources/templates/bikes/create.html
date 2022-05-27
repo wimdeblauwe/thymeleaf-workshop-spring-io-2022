@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bikes - Create</title>
+    <link rel="stylesheet" th:href="@{/css/application.css}">
+</head>
+<body class="container mx-auto px-4">
+<div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
+    <div class="-ml-4 -mt-4 flex justify-between items-center flex-wrap sm:flex-nowrap">
+        <div class="ml-4 mt-4">
+            <h3 class="text-lg leading-6 font-medium text-gray-900">Create new bike</h3>
+            <p class="mt-1 text-sm text-gray-500">Add the data of your bike below</p>
+        </div>
+        <div class="ml-4 mt-4 flex-shrink-0">
+
+        </div>
+    </div>
+</div>
+<div class="mt-4 max-w-3xl">
+    <form class="space-y-4"
+          th:method="post"
+          th:action="@{/bikes}"
+          th:object="${formData}">
+        <div class="grid grid-cols-3">
+            <label class="flex justify-start items-center mr-2">Brand:</label>
+            <input type="text" class="col-span-2" th:field="*{brand}">
+            <div class="col-span-3 text-red-500 flex justify-end"
+                 th:if="${#fields.hasErrors('brand')}"
+            >Brand is invalid!
+            </div>
+        </div>
+        <div class="grid grid-cols-3">
+            <label class="flex justify-start items-center mr-2">Type:</label>
+            <input type="text" class="col-span-2" th:field="*{type}">
+        </div>
+        <div class="flex justify-end items-center space-x-2">
+            <a class="hover:underline cursor-pointer">Cancel</a>
+            <button class="button-primary" type="submit">Save</button>
+        </div>
+    </form>
+</div>
+</body>
