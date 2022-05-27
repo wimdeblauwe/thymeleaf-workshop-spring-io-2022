@@ -18,8 +18,8 @@
 
 		<!-- Maven plugins -->
 		<frontend-maven-plugin.version>1.10.0</frontend-maven-plugin.version>
-		<frontend-maven-plugin.nodeVersion>v14.7.0</frontend-maven-plugin.nodeVersion>
-		<frontend-maven-plugin.npmVersion>6.14.11</frontend-maven-plugin.npmVersion>
+		<frontend-maven-plugin.nodeVersion>v16.13.1</frontend-maven-plugin.nodeVersion>
+		<frontend-maven-plugin.npmVersion>8.1.2</frontend-maven-plugin.npmVersion>
 	</properties>
 	<dependencies>
 		<dependency>

@@ -6,6 +6,8 @@ target/
 .sdkmanrc
 application-local.properties
 node_modules
+node/
+
 
 ### STS ###
 .apt_generated
